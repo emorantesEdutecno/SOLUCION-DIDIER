@@ -1,0 +1,115 @@
+.main {
+    &__section {
+        padding: 20px;
+        border: 1px solid $negro;
+        margin: $cero 10px;
+    }
+
+    &__aside {
+        padding: 20px;
+        border: 1px solid $negro;
+        margin: $cero 10px;
+
+    	&__figureSpecial {
+            text-align: center;
+            img {
+                border: 1px solid $negro;
+                width: 220px;
+                height: 220px;
+                border-radius: 100%;
+            }
+        }
+
+        &__title {
+            font-family: $ubuntu;
+            font-weight: 700;
+            margin: 10px $cero;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+            font-weight: 700;
+            color: $blanco;
+            background-color: $charcoal;
+            margin: 10px $cero;
+        }
+
+        &__icons {
+            text-align: center;
+            word-spacing: 10px;
+            font-size: $large;
+        }
+
+        &__paragraph{
+            font-family: $ubuntu;
+            text-align: justify;
+            margin: 10px $cero;
+            line-height: 1.8;
+        }
+
+        &__list {
+            li {
+                list-style-type: circle;
+                list-style-position: inside;
+            }
+        }
+
+        &__image {
+            width: 250px;
+            height: 250px;
+            margin: 30px auto;
+        }
+
+        .tuerca {
+            &__interna,  &__externa{
+                animation: 3s rotate infinite linear;
+                transform-origin: 80% 80%;
+            }
+        }
+
+        .etiqueta {
+            animation: 1.9s traslate infinite linear alternate;
+        }
+    }
+
+    &__article {
+        padding: 10px;
+        margin: 10px $cero;
+        border: 1px dotted $negro;
+
+    	&__figure {
+            text-align: center;
+            img {
+                border: 1px solid $negro;
+                width: 220px;
+                height: 220px;
+
+            }
+        }
+
+        &__paragraph{
+            font-family: $ubuntu;
+            font-size: $small;
+            text-align: justify;
+            margin: 10px $cero;
+            line-height: 1.8;
+        }
+
+        &__title, &__subtitle {
+            font-family: $ubuntu;
+            margin: 10px $cero;
+        }
+
+        &__icons {
+            a {
+                margin-right: 10px;
+
+                &:visited {
+                    color: $negro;
+                }
+            }
+        }
+    }
+}

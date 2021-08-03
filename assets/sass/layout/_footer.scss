@@ -1,0 +1,103 @@
+.footer {
+    background-color: $negro;
+    color: $blanco;
+    padding: 40px;
+    margin-top: 20px;
+    @include flexible();
+
+    &__list {
+        @include flexible();
+    }
+
+    &__item {
+        margin: $cero 20px;
+        color: $blanco;
+
+        a {
+            &:visited {
+                color: $blanco;
+            }
+        }
+
+        .input {
+            background-color: $blanco;
+            color: $sable;
+            padding: 2px;
+            width: 190px;
+            border-radius: 5px;
+            font-size: $medium;
+            &:focus{
+               background-color: $tangerine;
+           }
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .footer {
+        @include flexBox();
+
+        &__text {
+            text-align: center;
+        }
+
+        &__list {
+            margin-top: 10px;
+            @include flexBox();
+        }
+
+        &__item {
+            margin-top: 10px;
+
+            .button, .input {
+                display: block;
+                margin: 5px auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .footer {
+        @include flexBox();
+
+        &__text {
+            text-align: center;
+        }
+
+        &__list {
+            margin-top: 10px;
+            @include flexBox();
+        }
+
+        &__item {
+            margin-top: 10px;
+            .button, .input {
+                margin: $cero auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .footer {
+        @include flexBox();
+
+        &__text {
+            text-align: center;
+        }
+
+        &__list {
+            margin-top: 10px;
+            @include flexBox();
+        }
+
+        &__item {
+            margin-top: 10px;
+            .button, .input {
+                margin: $cero auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@mixin flexBox {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin flexible {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+}

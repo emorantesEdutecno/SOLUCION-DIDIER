@@ -1,0 +1,12 @@
+.footer__item {
+    .button {
+       background-color: $tangerine;
+       color: $sable;
+       padding: 2px;
+       border-radius: 5px;
+       font-size: $medium;
+       &:hover{
+           background-color: $blanco;
+       };
+    };
+};
